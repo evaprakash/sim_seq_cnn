@@ -1,0 +1,437 @@
+{
+    "metadata": {
+        "total_records": 1,
+        "best_valid_key_metric": 0.83215184,
+        "best_saved_files_config": {
+            "weights_file": "model_files/record_1_model_utvnv_modelWeights.h5",
+            "json_file": "model_files/record_1_model_utvnv_modelJson.json",
+            "directory": "model_files",
+            "prefix": "model_utvnv"
+        }
+    },
+    "records": [
+        {
+            "record_number": 1,
+            "message": "H1ESC",
+            "best_valid_key_metric": 0.83215184,
+            "best_valid_perf_info": {
+                "epoch": 41,
+                "valid_key_metric": 0.83215184,
+                "train_key_metric": 0.8360323199999999,
+                "valid_all_stats": {
+                    "per_output_auROC": [
+                        0.83215184
+                    ],
+                    "mean_auROC": 0.83215184,
+                    "per_output_auPRC": [
+                        0.8484094967062097
+                    ],
+                    "mean_auPRC": 0.8484094967062097,
+                    "per_output_balanced_accuracy": [
+                        0.7522
+                    ],
+                    "mean_balanced_accuracy": 0.7522,
+                    "per_output_unbalanced_accuracy": [
+                        0.7522
+                    ],
+                    "mean_unbalanced_accuracy": 0.7522
+                }
+            },
+            "key_metric_history": [
+                [
+                    "train",
+                    "valid"
+                ],
+                [
+                    0.56884288,
+                    0.5706250399999999
+                ],
+                [
+                    0.56493272,
+                    0.58860376
+                ],
+                [
+                    0.58621632,
+                    0.58766952
+                ],
+                [
+                    0.58843488,
+                    0.6082530400000001
+                ],
+                [
+                    0.61364984,
+                    0.6191217600000001
+                ],
+                [
+                    0.6242451200000001,
+                    0.6367344799999999
+                ],
+                [
+                    0.66246264,
+                    0.6678571200000001
+                ],
+                [
+                    0.70179232,
+                    0.7073747199999999
+                ],
+                [
+                    0.7379348800000001,
+                    0.7312859199999999
+                ],
+                [
+                    0.7343992,
+                    0.75014496
+                ],
+                [
+                    0.75160848,
+                    0.76105528
+                ],
+                [
+                    0.75206424,
+                    0.76671288
+                ],
+                [
+                    0.76798784,
+                    0.7711375199999999
+                ],
+                [
+                    0.7916504000000001,
+                    0.77503424
+                ],
+                [
+                    0.7927924799999999,
+                    0.77970656
+                ],
+                [
+                    0.78743104,
+                    0.7825347200000001
+                ],
+                [
+                    0.7842779200000001,
+                    0.77526272
+                ],
+                [
+                    0.79090656,
+                    0.7843567999999999
+                ],
+                [
+                    0.7887184,
+                    0.7923157599999999
+                ],
+                [
+                    0.8043245600000001,
+                    0.79566912
+                ],
+                [
+                    0.7992848000000001,
+                    0.7924043199999999
+                ],
+                [
+                    0.8026382400000001,
+                    0.79846576
+                ],
+                [
+                    0.79648832,
+                    0.7976736
+                ],
+                [
+                    0.79359824,
+                    0.80399376
+                ],
+                [
+                    0.79894832,
+                    0.80904416
+                ],
+                [
+                    0.8164003200000001,
+                    0.8074923200000002
+                ],
+                [
+                    0.79799248,
+                    0.81069664
+                ],
+                [
+                    0.812028,
+                    0.81445616
+                ],
+                [
+                    0.81121536,
+                    0.8068944
+                ],
+                [
+                    0.81972776,
+                    0.8146996000000001
+                ],
+                [
+                    0.8298383199999999,
+                    0.8202448800000002
+                ],
+                [
+                    0.82222256,
+                    0.81703864
+                ],
+                [
+                    0.82466384,
+                    0.82235744
+                ],
+                [
+                    0.81438016,
+                    0.8230728
+                ],
+                [
+                    0.82782576,
+                    0.8270798399999999
+                ],
+                [
+                    0.8031168,
+                    0.8262318399999999
+                ],
+                [
+                    0.8181124800000001,
+                    0.8258544
+                ],
+                [
+                    0.8456796799999999,
+                    0.82774576
+                ],
+                [
+                    0.84513424,
+                    0.8305343999999999
+                ],
+                [
+                    0.8296877599999999,
+                    0.831756
+                ],
+                [
+                    0.8360323199999999,
+                    0.83215184
+                ],
+                [
+                    0.8526948799999999,
+                    0.83154224
+                ],
+                [
+                    0.8436748800000001,
+                    0.8297524799999999
+                ],
+                [
+                    0.84297344,
+                    0.8315430399999999
+                ]
+            ],
+            "all_valid_metrics_history": {},
+            "saved_files_config": {
+                "weights_file": "model_files/record_1_model_utvnv_modelWeights.h5",
+                "json_file": "model_files/record_1_model_utvnv_modelJson.json",
+                "directory": "model_files",
+                "prefix": "model_utvnv"
+            },
+            "model_creator_info": {
+                "pretrained_model_config": null,
+                "layers_config": [
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "input_shape": [
+                                400,
+                                4
+                            ],
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 320,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 320,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.pooling.MaxPooling1D",
+                        "kwargs": {
+                            "border_mode": "valid",
+                            "pool_length": 4,
+                            "stride": 4
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 480,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 480,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.pooling.MaxPooling1D",
+                        "kwargs": {
+                            "border_mode": "valid",
+                            "pool_length": 4,
+                            "stride": 4
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 640,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 640,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.5
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Flatten",
+                        "kwargs": {}
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 2000,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 1,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "sigmoid"
+                        }
+                    }
+                ],
+                "optimizer_config": {
+                    "class": "keras.optimizers.Adam",
+                    "kwargs": {
+                        "lr": 0.0001
+                    }
+                },
+                "loss": "binary_crossentropy"
+            },
+            "other_data_loaders_info": {
+                "train": {
+                    "batch_size": 300,
+                    "rc_augment": true,
+                    "num_to_load_for_eval": 5000,
+                    "wrap_in_keys": null,
+                    "positives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_positives.txt.gz",
+                    "negatives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_negatives.txt.gz",
+                    "fasta_col": 1,
+                    "negatives_to_positives_ratio": 1,
+                    "label_columns": [],
+                    "randomize_after_pass": true,
+                    "random_seed": 1,
+                    "labels_dtype": "int",
+                    "title_present": false,
+                    "pre_onehot": false
+                }
+            },
+            "model_trainer_info": {
+                "seed": 1234,
+                "samples_per_epoch": 100,
+                "stopping_criterion_config": {
+                    "class": "EarlyStopping",
+                    "kwargs": {
+                        "max_epochs": 300,
+                        "epochs_to_wait": 3
+                    }
+                },
+                "class_weight": null,
+                "report_all_valid_metrics_every_epoch": false,
+                "reparameterizer": null
+            },
+            "training_metadata": {
+                "termination_condition": "normal",
+                "total_epochs_trained_for": 44
+            }
+        }
+    ]
+}

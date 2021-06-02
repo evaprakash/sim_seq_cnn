@@ -1,0 +1,270 @@
+{
+    "metadata": {
+        "total_records": 1,
+        "best_valid_key_metric": 0.58208096,
+        "best_saved_files_config": {
+            "weights_file": "model_files/record_1_model_BHYtD_modelWeights.h5",
+            "json_file": "model_files/record_1_model_BHYtD_modelJson.json",
+            "directory": "model_files",
+            "prefix": "model_BHYtD"
+        }
+    },
+    "records": [
+        {
+            "record_number": 1,
+            "message": "H1ESC",
+            "best_valid_key_metric": 0.58208096,
+            "best_valid_perf_info": {
+                "epoch": 8,
+                "valid_key_metric": 0.58208096,
+                "train_key_metric": 0.5877584,
+                "valid_all_stats": {
+                    "per_output_auROC": [
+                        0.58208096
+                    ],
+                    "mean_auROC": 0.58208096,
+                    "per_output_auPRC": [
+                        0.5837965754825893
+                    ],
+                    "mean_auPRC": 0.5837965754825893,
+                    "per_output_balanced_accuracy": [
+                        0.5534
+                    ],
+                    "mean_balanced_accuracy": 0.5534,
+                    "per_output_unbalanced_accuracy": [
+                        0.5534
+                    ],
+                    "mean_unbalanced_accuracy": 0.5534
+                }
+            },
+            "key_metric_history": [
+                [
+                    "train",
+                    "valid"
+                ],
+                [
+                    0.56300048,
+                    0.56708016
+                ],
+                [
+                    0.55858048,
+                    0.57714136
+                ],
+                [
+                    0.5766077599999999,
+                    0.5793412
+                ],
+                [
+                    0.57417624,
+                    0.57817744
+                ],
+                [
+                    0.58114328,
+                    0.5802872
+                ],
+                [
+                    0.5937197599999999,
+                    0.58023312
+                ],
+                [
+                    0.57492536,
+                    0.5779315199999999
+                ],
+                [
+                    0.5877584,
+                    0.58208096
+                ],
+                [
+                    0.5786701599999999,
+                    0.58038656
+                ],
+                [
+                    0.58117752,
+                    0.58087656
+                ],
+                [
+                    0.57419544,
+                    0.57700368
+                ]
+            ],
+            "all_valid_metrics_history": {},
+            "saved_files_config": {
+                "weights_file": "model_files/record_1_model_BHYtD_modelWeights.h5",
+                "json_file": "model_files/record_1_model_BHYtD_modelJson.json",
+                "directory": "model_files",
+                "prefix": "model_BHYtD"
+            },
+            "model_creator_info": {
+                "pretrained_model_config": null,
+                "layers_config": [
+                    {
+                        "class": "keras.layers.core.Flatten",
+                        "kwargs": {
+                            "input_shape": [
+                                400,
+                                4
+                            ]
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 320
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 320
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 480
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 480
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 640
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 640
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.5
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 2000
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 1
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "sigmoid"
+                        }
+                    }
+                ],
+                "optimizer_config": {
+                    "class": "keras.optimizers.Adam",
+                    "kwargs": {
+                        "lr": 0.001
+                    }
+                },
+                "loss": "binary_crossentropy"
+            },
+            "other_data_loaders_info": {
+                "train": {
+                    "batch_size": 300,
+                    "rc_augment": true,
+                    "num_to_load_for_eval": 5000,
+                    "wrap_in_keys": null,
+                    "positives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_positives.txt.gz",
+                    "negatives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_negatives.txt.gz",
+                    "fasta_col": 1,
+                    "negatives_to_positives_ratio": 1,
+                    "label_columns": [],
+                    "randomize_after_pass": true,
+                    "random_seed": 1,
+                    "labels_dtype": "int",
+                    "title_present": false,
+                    "pre_onehot": false
+                }
+            },
+            "model_trainer_info": {
+                "seed": 1234,
+                "samples_per_epoch": 100,
+                "stopping_criterion_config": {
+                    "class": "EarlyStopping",
+                    "kwargs": {
+                        "max_epochs": 300,
+                        "epochs_to_wait": 3
+                    }
+                },
+                "class_weight": null,
+                "report_all_valid_metrics_every_epoch": false,
+                "reparameterizer": null
+            },
+            "training_metadata": {
+                "termination_condition": "normal",
+                "total_epochs_trained_for": 11
+            }
+        }
+    ]
+}

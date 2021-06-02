@@ -1,0 +1,13 @@
+{
+    "class": "fasta_inmemory_data_loader.TwoStreamSeqOnly",
+    "kwargs": {
+       "batch_size": 300,
+       "positives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/test_sim_positives.txt.gz",
+       "negatives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/test_sim_negatives.txt.gz",
+       "fasta_col": 1,
+       "negatives_to_positives_ratio": 1,
+       "rc_augment": true,
+       "num_to_load_for_eval": 5000, 
+       "labels_dtype": "int"
+    }
+}

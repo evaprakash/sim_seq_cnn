@@ -1,0 +1,382 @@
+# This model is the same as "model_utvnv." Because I had to rerun the model to get the correct training metrics, this log came up with a new model prefix even though the model is exactly the same as "model_utvnv."
+{
+    "metadata": {
+        "total_records": 1,
+        "best_valid_key_metric": 0.7524,
+        "best_saved_files_config": {
+            "weights_file": "model_files/record_1_model_wSL0B_modelWeights.h5",
+            "json_file": "model_files/record_1_model_wSL0B_modelJson.json",
+            "directory": "model_files",
+            "prefix": "model_wSL0B"
+        }
+    },
+    "records": [
+        {
+            "record_number": 1,
+            "message": "H1ESC",
+            "best_valid_key_metric": 0.7524,
+            "best_valid_perf_info": {
+                "epoch": 27,
+                "valid_key_metric": 0.7524,
+                "train_key_metric": 0.7404,
+                "valid_all_stats": {
+                    "per_output_auROC": [
+                        0.813712
+                    ],
+                    "mean_auROC": 0.813712,
+                    "per_output_auPRC": [
+                        0.8335628766052486
+                    ],
+                    "mean_auPRC": 0.8335628766052486,
+                    "per_output_balanced_accuracy": [
+                        0.7524
+                    ],
+                    "mean_balanced_accuracy": 0.7524,
+                    "per_output_unbalanced_accuracy": [
+                        0.7524
+                    ],
+                    "mean_unbalanced_accuracy": 0.7524
+                }
+            },
+            "key_metric_history": [
+                [
+                    "train",
+                    "valid"
+                ],
+                [
+                    0.5426,
+                    0.5556
+                ],
+                [
+                    0.5406,
+                    0.5598
+                ],
+                [
+                    0.5648,
+                    0.5628
+                ],
+                [
+                    0.5444,
+                    0.565
+                ],
+                [
+                    0.5796,
+                    0.5818
+                ],
+                [
+                    0.5741999999999999,
+                    0.5820000000000001
+                ],
+                [
+                    0.6262,
+                    0.6316
+                ],
+                [
+                    0.6422,
+                    0.6488
+                ],
+                [
+                    0.65,
+                    0.6374
+                ],
+                [
+                    0.6646,
+                    0.6886
+                ],
+                [
+                    0.6872,
+                    0.6904
+                ],
+                [
+                    0.6796,
+                    0.6994
+                ],
+                [
+                    0.7094,
+                    0.7041999999999999
+                ],
+                [
+                    0.7196,
+                    0.7132000000000001
+                ],
+                [
+                    0.7230000000000001,
+                    0.7174
+                ],
+                [
+                    0.7216,
+                    0.7150000000000001
+                ],
+                [
+                    0.7152000000000001,
+                    0.7021999999999999
+                ],
+                [
+                    0.724,
+                    0.7202
+                ],
+                [
+                    0.7162,
+                    0.717
+                ],
+                [
+                    0.7372000000000001,
+                    0.7302
+                ],
+                [
+                    0.7172000000000001,
+                    0.7314
+                ],
+                [
+                    0.734,
+                    0.7314
+                ],
+                [
+                    0.7230000000000001,
+                    0.727
+                ],
+                [
+                    0.728,
+                    0.7434000000000001
+                ],
+                [
+                    0.739,
+                    0.7438
+                ],
+                [
+                    0.7474000000000001,
+                    0.7418
+                ],
+                [
+                    0.7404,
+                    0.7524
+                ],
+                [
+                    0.7405999999999999,
+                    0.75
+                ],
+                [
+                    0.7356,
+                    0.7338
+                ],
+                [
+                    0.739,
+                    0.7363999999999999
+                ]
+            ],
+            "all_valid_metrics_history": {},
+            "saved_files_config": {
+                "weights_file": "model_files/record_1_model_wSL0B_modelWeights.h5",
+                "json_file": "model_files/record_1_model_wSL0B_modelJson.json",
+                "directory": "model_files",
+                "prefix": "model_wSL0B"
+            },
+            "model_creator_info": {
+                "pretrained_model_config": null,
+                "layers_config": [
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "input_shape": [
+                                400,
+                                4
+                            ],
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 320,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 320,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.pooling.MaxPooling1D",
+                        "kwargs": {
+                            "border_mode": "valid",
+                            "pool_length": 4,
+                            "stride": 4
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 480,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 480,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.pooling.MaxPooling1D",
+                        "kwargs": {
+                            "border_mode": "valid",
+                            "pool_length": 4,
+                            "stride": 4
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 640,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.convolutional.Convolution1D",
+                        "kwargs": {
+                            "filter_length": 8,
+                            "border_mode": "valid",
+                            "nb_filter": 640,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.5
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Flatten",
+                        "kwargs": {}
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 2000,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 1,
+                            "kernel_initializer": "he_normal"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "sigmoid"
+                        }
+                    }
+                ],
+                "optimizer_config": {
+                    "class": "keras.optimizers.Adam",
+                    "kwargs": {
+                        "lr": 0.0001
+                    }
+                },
+                "loss": "binary_crossentropy"
+            },
+            "other_data_loaders_info": {
+                "train": {
+                    "batch_size": 300,
+                    "rc_augment": true,
+                    "num_to_load_for_eval": 5000,
+                    "wrap_in_keys": null,
+                    "positives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_positives.txt.gz",
+                    "negatives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_negatives.txt.gz",
+                    "fasta_col": 1,
+                    "negatives_to_positives_ratio": 1,
+                    "label_columns": [],
+                    "randomize_after_pass": true,
+                    "random_seed": 1,
+                    "labels_dtype": "int",
+                    "title_present": false,
+                    "pre_onehot": false
+                }
+            },
+            "model_trainer_info": {
+                "seed": 1234,
+                "samples_per_epoch": 100,
+                "stopping_criterion_config": {
+                    "class": "EarlyStopping",
+                    "kwargs": {
+                        "max_epochs": 300,
+                        "epochs_to_wait": 3
+                    }
+                },
+                "class_weight": null,
+                "report_all_valid_metrics_every_epoch": false,
+                "reparameterizer": null
+            },
+            "training_metadata": {
+                "termination_condition": "normal",
+                "total_epochs_trained_for": 30
+            }
+        }
+    ]
+}

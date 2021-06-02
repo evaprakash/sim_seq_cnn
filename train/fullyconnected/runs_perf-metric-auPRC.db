@@ -1,0 +1,287 @@
+#See CNN log file note for why model prefix doesn't match
+{
+    "metadata": {
+        "total_records": 1,
+        "best_valid_key_metric": 0.5868025470506254,
+        "best_saved_files_config": {
+            "weights_file": "model_files/record_1_model_LaO3t_modelWeights.h5",
+            "json_file": "model_files/record_1_model_LaO3t_modelJson.json",
+            "directory": "model_files",
+            "prefix": "model_LaO3t"
+        }
+    },
+    "records": [
+        {
+            "record_number": 1,
+            "message": "H1ESC",
+            "best_valid_key_metric": 0.5868025470506254,
+            "best_valid_perf_info": {
+                "epoch": 12,
+                "valid_key_metric": 0.5868025470506254,
+                "train_key_metric": 0.5950820546005005,
+                "valid_all_stats": {
+                    "per_output_auROC": [
+                        0.58941152
+                    ],
+                    "mean_auROC": 0.58941152,
+                    "per_output_auPRC": [
+                        0.5868025470506254
+                    ],
+                    "mean_auPRC": 0.5868025470506254,
+                    "per_output_balanced_accuracy": [
+                        0.567
+                    ],
+                    "mean_balanced_accuracy": 0.567,
+                    "per_output_unbalanced_accuracy": [
+                        0.567
+                    ],
+                    "mean_unbalanced_accuracy": 0.567
+                }
+            },
+            "key_metric_history": [
+                [
+                    "train",
+                    "valid"
+                ],
+                [
+                    0.5640076418941518,
+                    0.5665657068690069
+                ],
+                [
+                    0.573523081008322,
+                    0.5710516357969095
+                ],
+                [
+                    0.5813665191687561,
+                    0.5793407182016214
+                ],
+                [
+                    0.5845859842087932,
+                    0.5798150420307386
+                ],
+                [
+                    0.5860280560683955,
+                    0.581056643140838
+                ],
+                [
+                    0.6035987737445515,
+                    0.5768946076818875
+                ],
+                [
+                    0.5883720135987003,
+                    0.579769176188782
+                ],
+                [
+                    0.5999625465511762,
+                    0.5830979224010759
+                ],
+                [
+                    0.5797156099493944,
+                    0.584049843993198
+                ],
+                [
+                    0.5892053670023473,
+                    0.5824573187488518
+                ],
+                [
+                    0.5735794422969306,
+                    0.5826457060370668
+                ],
+                [
+                    0.5950820546005005,
+                    0.5868025470506254
+                ],
+                [
+                    0.5934932604102799,
+                    0.5792561034729468
+                ],
+                [
+                    0.605997447119211,
+                    0.5769569081489414
+                ],
+                [
+                    0.611420698252682,
+                    0.580741018401975
+                ]
+            ],
+            "all_valid_metrics_history": {},
+            "saved_files_config": {
+                "weights_file": "model_files/record_1_model_LaO3t_modelWeights.h5",
+                "json_file": "model_files/record_1_model_LaO3t_modelJson.json",
+                "directory": "model_files",
+                "prefix": "model_LaO3t"
+            },
+            "model_creator_info": {
+                "pretrained_model_config": null,
+                "layers_config": [
+                    {
+                        "class": "keras.layers.core.Flatten",
+                        "kwargs": {
+                            "input_shape": [
+                                400,
+                                4
+                            ]
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 320
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 320
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 480
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 480
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.2
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 640
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 640
+                        }
+                    },
+                    {
+                        "class": "keras.layers.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dropout",
+                        "kwargs": {
+                            "p": 0.5
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 2000
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "relu"
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Dense",
+                        "kwargs": {
+                            "output_dim": 1
+                        }
+                    },
+                    {
+                        "class": "keras.layers.core.Activation",
+                        "kwargs": {
+                            "activation": "sigmoid"
+                        }
+                    }
+                ],
+                "optimizer_config": {
+                    "class": "keras.optimizers.Adam",
+                    "kwargs": {
+                        "lr": 0.001
+                    }
+                },
+                "loss": "binary_crossentropy"
+            },
+            "other_data_loaders_info": {
+                "train": {
+                    "batch_size": 300,
+                    "rc_augment": true,
+                    "num_to_load_for_eval": 5000,
+                    "wrap_in_keys": null,
+                    "positives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_positives.txt.gz",
+                    "negatives_fasta_source": "/users/eprakash/git/interpret-benchmark/data/dnase_positives/common_scripts/H1/sequences/train_sim_negatives.txt.gz",
+                    "fasta_col": 1,
+                    "negatives_to_positives_ratio": 1,
+                    "label_columns": [],
+                    "randomize_after_pass": true,
+                    "random_seed": 1,
+                    "labels_dtype": "int",
+                    "title_present": false,
+                    "pre_onehot": false
+                }
+            },
+            "model_trainer_info": {
+                "seed": 1234,
+                "samples_per_epoch": 100,
+                "stopping_criterion_config": {
+                    "class": "EarlyStopping",
+                    "kwargs": {
+                        "max_epochs": 300,
+                        "epochs_to_wait": 3
+                    }
+                },
+                "class_weight": null,
+                "report_all_valid_metrics_every_epoch": false,
+                "reparameterizer": null
+            },
+            "training_metadata": {
+                "termination_condition": "normal",
+                "total_epochs_trained_for": 15
+            }
+        }
+    ]
+}
