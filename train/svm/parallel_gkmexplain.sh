@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 
-#This script to run gkmexplain in parallel is taken from Anna Shcherbina in the Kundaje Lab
+#This script to run gkmexplain in parallel was written with help from the Kundaje Lab
 #It takes the four arguments listed below:
 inputf=$1  ## input fasta file 
 numchunks=$2 ## number of parallel chunks to split input fasta file into 
