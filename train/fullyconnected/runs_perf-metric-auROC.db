@@ -1,3 +1,4 @@
+#See CNN log file note for why model prefix doesn't match
 {
     "metadata": {
         "total_records": 1,
