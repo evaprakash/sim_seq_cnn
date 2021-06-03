@@ -33,20 +33,12 @@
                         }
                     },
                     {
-                        "class": "keras.layers.normalization.BatchNormalization",
-                        "kwargs": {}
-                    },
-                    {
                         "class": "keras.layers.Activation",
                         "kwargs": {"activation": "relu"}
                     },
                     {
                         "class": "keras.layers.core.Dense",
                         "kwargs": {"output_dim": 320}
-                    },
-                    {
-                        "class": "keras.layers.normalization.BatchNormalization",
-                        "kwargs": {}
                     },
                     {
                         "class": "keras.layers.Activation",
@@ -61,20 +53,12 @@
                         "kwargs": {"output_dim": 480}
                     },
                     {
-                        "class": "keras.layers.normalization.BatchNormalization",
-                        "kwargs": {}
-                    },
-                    {
                         "class": "keras.layers.Activation",
                         "kwargs": {"activation": "relu"}
                     },
                     {
                         "class": "keras.layers.core.Dense",
                         "kwargs": {"output_dim": 480}
-                    },
-                    {
-                        "class": "keras.layers.normalization.BatchNormalization",
-                        "kwargs": {}
                     },
                     {
                         "class": "keras.layers.Activation",
@@ -89,20 +73,12 @@
                         "kwargs": {"output_dim": 640}
                     },
                     {
-                        "class": "keras.layers.normalization.BatchNormalization",
-                        "kwargs": {}
-                    },
-                    {
                         "class": "keras.layers.Activation",
                         "kwargs": {"activation": "relu"}
                     },
                     {                    
                         "class": "keras.layers.core.Dense",
                         "kwargs": {"output_dim": 640}
-                    },
-                    {
-                        "class": "keras.layers.normalization.BatchNormalization",
-                        "kwargs": {}
                     },
                     {
                         "class": "keras.layers.Activation",
@@ -115,10 +91,6 @@
                     {
                         "class": "keras.layers.core.Dense",
                         "kwargs": {"output_dim": 2000}
-                    },
-                    {
-                        "class": "keras.layers.normalization.BatchNormalization",
-                        "kwargs": {}
                     },
                     {
                         "class": "keras.layers.core.Activation",
